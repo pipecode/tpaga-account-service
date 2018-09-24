@@ -1,6 +1,3 @@
-group 'co.pipecode.labs'
-version '1.0-SNAPSHOT'
-
 buildscript {
     repositories {
         mavenCentral()
@@ -10,11 +7,30 @@ buildscript {
     }
 }
 
+plugins {
+    id "org.sonarqube" version "2.6.2"
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "tpaga-account-service"
+        property "sonar.projectName", "TPaga Account Service"
+        property "sonar.projectVersion", "0.1.0"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.tests", "src/test"
+        property "sonar.sources", "src/main"
+    }
+}
+
+
+group 'co.pipecode.labs'
+version '1.0-SNAPSHOT'
 
 bootJar {
     baseName = 'tpaga-account-service'

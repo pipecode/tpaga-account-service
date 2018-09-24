@@ -48,6 +48,9 @@ Adquiere el bloqueo (lock) si esta disponible, de lo contrario los hilos se bloq
 ##### Void unlock()
 Libera el bloqueo (lock)
 
+## Technical Requirements
+Java JDK 7 or newer and Gradle 2 or newer (only if you use gradle command instead of gradle wrapper)
+
 ## Run the application
 To build and run the application, execute:
 
