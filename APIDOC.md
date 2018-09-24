@@ -2,10 +2,11 @@
 Este documento describe como interactuar con la Api Rest de TPaga Account Service.
 
 ## Environments
-| Name       | Host              |
-| ---------- | ----------------- |
-| local      | localhost         |
-| production | tpaga.pipecode.co |
+| Name        | Host                        |
+| ----------  | --------------------------- |
+| local       | localhost                   |
+| development | backend-tpaga.herokuapp.com |
+| production  | 18.204.251.209:9091         |
 
 ## Headers
 | Name         | Host             |
@@ -61,7 +62,7 @@ Crea una transacción con el fin de sumar un valor a la cuenta sea positivo o ne
 
 ###### Curl Example
 ```
-curl --request POST --url 'http://tpaga.pipecode.co/api/account' --header 'Content-Type: application/json' --data '{ "transactionDetail" : "Translado desde cuenta TPaga", "transactionValue" : 50.50 }'
+curl --request POST --url 'http://backend-tpaga.herokuapp.com/api/account' --header 'Content-Type: application/json' --data '{ "transactionDetail" : "Translado desde cuenta TPaga", "transactionValue" : 50.50 }'
 ```
 
 ## Get Account Info
@@ -70,7 +71,7 @@ Obtiene la información de la cuenta y el historial de transacciones.
 
 ###### Curl Example
 ```
-curl --request GET --url 'http://tpaga.pipecode.co/api/account'
+curl --request GET --url 'http://backend-tpaga.herokuapp.com/api/account'
 ```
 
 ###### Response Example
@@ -94,7 +95,7 @@ Reinicia el historial y balance de la cuenta.
 
 ###### Curl Example
 ```
-curl --request PUT --url 'http://tpaga.pipecode.co/api/account'
+curl --request PUT --url 'http://backend-tpaga.herokuapp.com/api/account'
 ```
 
 ###### Response Example
