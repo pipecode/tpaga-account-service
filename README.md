@@ -1,5 +1,5 @@
-# Account Service
-BackEnd Developer Test - TPaga
+# TPaga Account Service
+BackEnd Developer Test - TPaga is a rest service application builds with Spring Boot in a microservice oriented architecture.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pipecode/tpaga-account-service)
 
@@ -18,7 +18,7 @@ manejadas de alguna forma para que la cuenta pueda procesar todos los movimiento
 transacciones resulten en un estado consistente. Por favor haga explícito en el documento
 las técnicas empleadas para lograrlo.
 
-##### Solucion Propuesta
+##### Solución Propuesta
 Se implemento la interfaz Lock y ReetrantLock del api ```java.util.concurrent.locks```.
  
 Se implemento la interfaz de bloqueo (Lock), que actúa como una cerradura de un proceso a ejecutar haciendo que los hilos se bloqueen hasta que el proceso la cerradura/bloqueo sea abierta/liberada.
@@ -44,10 +44,9 @@ public void perform() {
 
 ##### Void lock()
 Adquiere el bloqueo (lock) si esta disponible, de lo contrario los hilos se bloquean hasta que el bloqueo (lock) sea liberado.
+
 ##### Void unlock()
 Libera el bloqueo (lock)
-## Project Description
-This is a REST ervice application builds with Spring Boot in a microservice oriented architecture.
 
 ## Run the application
 To build and run the application, execute:
@@ -62,3 +61,12 @@ To run the application tests, execute:
 ```
 ./gradlew test
 ```
+
+## Documentation
+#### Postman
+[TPaga Account Service - Postman Docs](https://documenter.getpostman.com/view/5261799/RWaPt6Ug)
+#### Local
+[TPaga Account Service - Local Docs](https://github.com/pipecode/tpaga-account-service/blob/master/APIDOC.md)
+
+## Autor
+[Luis Felipe Castro Ospina](https://www.linkedin.com/in/felipecode/)
