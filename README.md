@@ -1,7 +1,7 @@
 # Account Service
 BackEnd Developer Test - TPaga
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/heroku/node-js-sample)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pipecode/tpaga-account-service)
 
 ## Problem
 ### Un API de cuenta básico
@@ -53,7 +53,7 @@ This is a REST ervice application builds with Spring Boot in a microservice orie
 To build and run the application, execute:
 
 ```
-./gradlew build && java -jar build/libs/{project_id}-0.1.0.jar
+./gradlew build && java -jar build/libs/{artifact}-{version}.jar
 ```
 
 ## Unit Tests
