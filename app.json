@@ -1,0 +1,12 @@
+{
+  "name": "TPaga BackEnd Test",
+  "description": "BackEnd-Developer Test - TPaga",
+  "repository": "https://github.com/pipecode/tpaga-account-service",
+  "logo": "https://www.springla.io/wp-content/uploads/2015/01/spring-framework-project-logo.png",
+  "keywords": [
+    "spring",
+    "java",
+    "boot",
+    "rest"
+  ]
+}
